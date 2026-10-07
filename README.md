@@ -67,8 +67,7 @@ Board: **ESP32 Dev Module** (cài *esp32 by Espressif Systems* trong Boards Mana
 
 ## 🚀 Cài đặt & nạp code
 
-1. Tạo template **`gara`** trên [Blynk Console](https://blynk.cloud), thêm các datastream `V0`–`V4` và event `theft_alert` như bảng trên.
-2. Mở `blynk.ino`, điền thông tin của bạn:
+1. Mở `blynk.ino`, điền thông tin của bạn:
    ```cpp
    #define BLYNK_TEMPLATE_ID   "YOUR_TEMPLATE_ID"
    #define BLYNK_TEMPLATE_NAME "gara"
@@ -77,8 +76,8 @@ Board: **ESP32 Dev Module** (cài *esp32 by Espressif Systems* trong Boards Mana
    char ssid[] = "YOUR_WIFI_NAME";
    char pass[] = "YOUR_WIFI_PASSWORD";
    ```
-3. Chọn board **ESP32 Dev Module**, chọn cổng COM, bấm **Upload**.
-4. Mở Serial Monitor (115200 baud) để xem log.
+2. Chọn board **ESP32 Dev Module**, chọn cổng COM, bấm **Upload**.
+3. Mở Serial Monitor (115200 baud) để xem log.
 
 ## ⚙️ Thông số có thể chỉnh
 
@@ -110,10 +109,6 @@ Nằm ở đầu file `blynk.ino`:
 | Quạt không chạy / chạy ngược | Đổi `RELAY_ON`/`RELAY_OFF` giữa `HIGH` và `LOW` |
 | Quạt không bật trong ~20 giây đầu | Bình thường, MQ-2 đang làm nóng |
 | Không kết nối Blynk | Kiểm tra SSID/mật khẩu WiFi, Auth Token và Template ID |
-
-## 🔒 Lưu ý bảo mật
-
-**Không đẩy `BLYNK_AUTH_TOKEN`, tên và mật khẩu WiFi thật lên GitHub.** Hãy dùng placeholder như trên, hoặc tách ra file `secrets.h` và thêm vào `.gitignore`.
 
 ## 📄 Giấy phép
 
