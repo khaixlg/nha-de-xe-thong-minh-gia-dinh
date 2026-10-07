@@ -1,6 +1,6 @@
 #define BLYNK_TEMPLATE_ID   "TMPL6W8yjc9Cr"
 #define BLYNK_TEMPLATE_NAME "gara"
-#define BLYNK_AUTH_TOKEN    "PWAM_X0S2Wsr9ll1E3AYsLiiQ8w-mFUU"
+#define BLYNK_AUTH_TOKEN    "YOUR_TOKEN"
 
 #define BLYNK_PRINT Serial
 
@@ -13,8 +13,8 @@
 #include <ESP32Servo.h>
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "pp";
-char pass[] = "20022004";
+char ssid[] = "WI-FI";
+char pass[] = "PASSWORD";
 
 #define SCREEN_WIDTH   128
 #define SCREEN_HEIGHT  64
